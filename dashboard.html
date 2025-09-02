@@ -1,31 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="el" x-data="{ sidebar: false }">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GreekArmy | Διαχείριση</title>
-
 </head>
 
 <body class="bg-gray-200">
-
-
-    <!-- menu hamburger toggler -->
-    <div
-        class="w-9 h-9 bg-white absolute top-4 lg:hidden xl:hidden hover:bg-yellow-400 cursor-pointer right-3 rounded-lg flex flex-col justify-center items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M3 4h18v2H3zm6 7h12v2H9zm-6 7h18v2H3z" />
-        </svg>
-    </div>
-
     <!-- content and sidebar areas -->
     <div class="grid grid-cols-2 h-full">
         <!-- sidebar start -->
-        <div
-            class="fixed flex h-screen max-w-50 flex-col z-10 bg-white bg-clip-border p-4 text-gray-700 shadow-xl shadow-blue-gray-900/5">
+        <div class="fixed flex h-screen max-w-50 lg:flex flex-col z-10 bg-white bg-clip-border p-4 text-gray-700 shadow-xl shadow-blue-gray-900/5"
+            :class="{ 'hidden': !sidebar }">
             <div class="p-4 mb-2 inline-flex gap-4">
-                <img src="img/logo.png" class="w-6">
+                <img src="img/logo.png" class="w-6" />
                 <span class="text-lg">GreekArmy</span>
             </div>
             <nav class="flex min-w-[240px] flex-col gap-1 p-2 font-sans text-base font-normal text-blue-gray-700">
@@ -51,8 +40,7 @@
                                     stroke-width="2.5" stroke="currentColor" aria-hidden="true"
                                     class="w-4 h-4 mx-auto transition-transform rotate-180">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5">
-                                    </path>
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
                                 </svg>
                             </span>
                         </button>
@@ -121,8 +109,7 @@
                                     stroke-width="2.5" stroke="currentColor" aria-hidden="true"
                                     class="w-4 h-4 mx-auto transition-transform">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5">
-                                    </path>
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
                                 </svg>
                             </span>
                         </button>
@@ -155,7 +142,6 @@
                                     Ρουχισμός
                                 </div>
 
-
                                 <div role="button"
                                     class="flex items-center w-full p-3 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
                                     <div class="grid mr-4 place-items-center">
@@ -184,7 +170,7 @@
                     Ειδοποιήσεις
                     <div class="grid ml-auto place-items-center justify-self-end">
                         <div
-                            class="relative grid bg-yellow-300 items-center px-2 py-1 font-sans text-xs font-bold uppercase rounded-full select-none whitespace-nowrap bg-blue-gray-500/20 text-blue-gray-900">
+                            class="relative grid bg-[#fdf000] items-center px-2 py-1 font-sans text-xs font-bold uppercase rounded-full select-none whitespace-nowrap bg-blue-gray-500/20 text-blue-gray-900">
                             <span class="">0</span>
                         </div>
                     </div>
@@ -218,20 +204,41 @@
         </div>
         <!-- end sidebar -->
 
-
         <!-- start dashboard components -->
 
+        <header class="w-full m-auto h-[70px] bg-white absolute flex flex-row justify-center items-center">
+
+            <div class="inline-flex absolute left-3 lg:left-auto lg:right-4 justify-center items-center gap-4">
+                <div class="w-12 h-12 rounded-md bg-yellow-400 order-1 lg:order-2"></div>
+                <div class="text-sm order-1">
+                    <div>Γειά σου</div>
+                    <div class="font-semibold">Alexandros</div>
+                </div>
+            </div>
+
+
+
+            <!-- menu hamburger toggler -->
+            <div @click="sidebar = !sidebar" :class="sidebar ? 'text-black' : 'text-gray-600'"
+                class="w-10 h-10 absolute right-4 lg:hidden xl:hidden cursor-pointer right-3 rounded-lg flex flex-col justify-center items-center">
+                <div x-show="!sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M3 4h18v2H3zm6 7h12v2H9zm-6 7h18v2H3z" />
+                    </svg>
+                </div>
+
+                <div x-show="sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2.5" d="m7 7l10 10M7 17L17 7" />
+                    </svg>
+                </div>
+            </div>
+        </header>
     </div>
     <!-- end content and sidebar areas -->
 
-
-
-
-
-
-
     <script type="module" src="/src/main.js"></script>
-
 </body>
 
 </html>
