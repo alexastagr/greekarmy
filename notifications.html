@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GreekArmy | Διαχείριση</title>
+    <title>GreekArmy | Ειδοποιήσεις</title>
 </head>
 
 <body class="bg-gray-200">
@@ -157,7 +157,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="notifications.html"
+                <div role="button"
                     class="flex items-center w-full p-3 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
                     <div class="grid mr-4 place-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -174,7 +174,7 @@
                             <span class="">0</span>
                         </div>
                     </div>
-                </a>
+                </div>
 
                 <div role="button"
                     class="flex items-center w-full p-3 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
@@ -239,104 +239,101 @@
     <!-- end sidebar area -->
 
 
-    <div class="lg:w-1/2 w-full m-auto">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-8 p-12 mt-[60px]">
+    <div class="lg:w-1/2 w-full mx-auto mt-10">
 
-            <!-- ειδοποιήσεις -->
-            <div
-                class="flex w-full items-center bg-white border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
-                <div class="p-4 bg-red-500">
-                    <svg class="w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="M9.042 19.003h5.916a3 3 0 0 1-5.916 0m2.958-17a7.5 7.5 0 0 1 7.5 7.5v4l1.418 3.16A.95.95 0 0 1 20.052 18h-16.1a.95.95 0 0 1-.867-1.338l1.415-3.16V9.49l.005-.25A7.5 7.5 0 0 1 12 2.004" />
-                    </svg>
+
+        <section class="mt-10 text-gray-600 bg-white p-8 body-font">
+            <div class="container px-5 py-24 mx-auto flex flex-wrap">
+                <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+                    <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center  bg-[#facc15] text-black  relative z-10 title-font font-medium text-sm">
+                        1</div>
+                    <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                        <div
+                            class="flex-shrink-0 w-24 h-24 bg-[#facc15] text-black rounded-full inline-flex items-center justify-center">
+                            <i data-lucide="store" class="w-12 h-12"></i>
+                        </div>
+                        <div class=" flex-grow sm:pl-6 mt-6 sm:mt-0">
+                            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl mb-2">Απόθεματα Κ.Ψ.Μ
+                            </h2>
+                            <span class="bg-gray-300 p-2 rounded-xl text-black">Kυριακή 3 Μαρτίου 2024</span>
+                            <p class="mt-4 leading-relaxed">Παρατηρήθηκε έλειψη προϊόντων υγιεινής και αξεσουάρ
+                                καθαρισμού.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="px-4 text-gray-800">
-                    <h3 class="text-sm tracking-wider">Κρίσημες Ειδοποιήσεις</h3>
-                    <p class="text-3xl font-bold">5</p>
+
+
+                <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+                    <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center  bg-[#facc15] text-black  relative z-10 title-font font-medium text-sm">
+                        2</div>
+                    <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                        <div
+                            class="flex-shrink-0 w-24 h-24 bg-[#facc15] text-black rounded-full inline-flex items-center justify-center">
+                            <i data-lucide="wrench" class="w-12 h-12"></i>
+                        </div>
+                        <div class=" flex-grow sm:pl-6 mt-6 sm:mt-0">
+                            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl mb-2">Συντήρηση Οχήματος
+                            </h2>
+                            <span class="bg-gray-300 p-2 rounded-xl text-black">Δευτέρα 4 Μαρτίου 2024</span>
+                            <p class="mt-4 leading-relaxed">Το όχημα με πινακίδα ΕΣ423 τύπου Καναδέζας έχει
+                                προγραμματιστεί για εργασίες συντήρησης.</p>
+                        </div>
+                    </div>
                 </div>
+
+
+
+
+
+                <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+                    <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#facc15] text-black relative z-10 title-font font-medium text-sm">
+                        3</div>
+                    <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                        <div
+                            class="flex-shrink-0 w-24 h-24 bg-[#facc15] text-black rounded-full inline-flex items-center justify-center">
+                            <i data-lucide="ban" class="w-12 h-12"></i>
+                        </div>
+                        <div class=" flex-grow sm:pl-6 mt-6 sm:mt-0">
+                            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl mb-2">Φαντάροι για αναφορά
+                            </h2>
+                            <span class="bg-gray-300 p-2 rounded-xl text-black">Δευτέρα 5 Μαρτίου 2024</span>
+                            <p class="mt-4 leading-relaxed">O Γεράσιμος Χριστοδούλου, Εμαννουήλ Τσέλνος και Γεράσιμος
+                                Τσοκαρίδης είναι αναφερόμενοι απο τον Λοχαγό Τζαβέλα Εμμανουήλ.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
             </div>
-
-            <!-- φανταροι -->
-            <div
-                class="flex w-full items-center bg-white border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
-                <div class="p-4 bg-green-500">
-                    <svg class="w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="M4.5 6.375a4.125 4.125 0 1 1 8.25 0a4.125 4.125 0 0 1-8.25 0m9.75 2.25a3.375 3.375 0 1 1 6.75 0a3.375 3.375 0 0 1-6.75 0M1.5 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63a13.07 13.07 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63zm15.75.003l-.001.144a2.25 2.25 0 0 1-.233.96q.302.018.609.018c1.596 0 3.107-.37 4.451-1.029a.75.75 0 0 0 .42-.642l.004-.204a4.875 4.875 0 0 0-6.961-4.407a8.6 8.6 0 0 1 1.71 5.157z" />
-                    </svg>
-                </div>
-                <div class="px-4 text-gray-800">
-                    <h3 class="text-sm tracking-wider">Σύνολο Φαντάρων</h3>
-                    <p class="text-3xl font-bold">48</p>
-                </div>
-            </div>
-
-            <!-- αξιωματικοί -->
-            <div
-                class="flex w-full items-center bg-white border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
-                <div class="p-4 bg-blue-600">
-                    <svg class="w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
-                        <path fill="currentColor"
-                            d="M23.633 5.028a1.07 1.07 0 0 0-.777-.366c-2.295-.06-5.199-2.514-7.119-3.477C14.551.592 13.768.201 13.18.098a1.2 1.2 0 0 0-.36.001c-.588.103-1.371.494-2.556 1.087c-1.92.962-4.824 3.417-7.119 3.476a1.08 1.08 0 0 0-.778.366a1.17 1.17 0 0 0-.291.834c.493 10.023 4.088 16.226 10.396 19.831c.164.093.346.141.527.141s.363-.048.528-.141c6.308-3.605 9.902-9.808 10.396-19.831a1.16 1.16 0 0 0-.29-.834m-5.57 10.249c0 1.36-2.604 1.67-5.048 1.67c-2.44 0-5.077-.31-5.077-1.67v-.374c0-.999 1.8-2.011 3.333-2.564c.111-.041.641-.329.345-1.106c-.76-.775-1.334-2.034-1.334-3.271c0-1.896 1.254-2.889 2.719-2.889s2.726.993 2.726 2.889c0 1.232-.577 2.485-1.332 3.264h.003c-.289.881.174 1.09.248 1.114c1.61.532 3.418 1.536 3.418 2.564z" />
-                    </svg>
-                </div>
-                <div class="px-4 text-gray-800">
-                    <h3 class="text-sm tracking-wider">Σύνολο Αξιωματικων</h3>
-                    <p class="text-3xl font-bold">56</p>
-                </div>
-            </div>
-
-            <!-- υπηρεσίες -->
-            <div
-                class="flex w-full items-center bg-white border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
-                <div class="p-4 bg-orange-500">
-                    <svg class="w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path fill="currentColor"
-                            d="M195.1 9.5c3-14.8 16.1-25.5 31.3-25.5h59.8c15.2 0 28.3 10.7 31.3 25.5l14.5 70c14.1 6 27.3 13.7 39.3 22.8l67.8-22.5c14.4-4.8 30.2 1.2 37.8 14.4l29.9 51.8c7.6 13.2 4.9 29.8-6.5 39.9L447 233.3c.9 7.4 1.3 15 1.3 22.7s-.5 15.3-1.3 22.7l53.4 47.5c11.4 10.1 14 26.8 6.5 39.9L477 417.9c-7.6 13.1-23.4 19.2-37.8 14.4l-67.8-22.5c-12.1 9.1-25.3 16.7-39.3 22.8l-14.4 69.9c-3.1 14.9-16.2 25.5-31.3 25.5h-59.8c-15.2 0-28.3-10.7-31.3-25.5l-14.4-69.9c-14.1-6-27.2-13.7-39.3-22.8l-68.1 22.5c-14.4 4.8-30.2-1.2-37.8-14.4L5.8 366.1c-7.6-13.2-4.9-29.8 6.5-39.9l53.4-47.5c-.9-7.4-1.3-15-1.3-22.7s.5-15.3 1.3-22.7l-53.4-47.5C.9 175.7-1.7 159 5.8 145.9l29.9-51.8c7.6-13.2 23.4-19.2 37.8-14.4l67.8 22.5c12.1-9.1 25.3-16.7 39.3-22.8zM256.3 336a80 80 0 1 0-.6-160a80 80 0 1 0 .6 160" />
-                    </svg>
-                </div>
-                <div class="px-4 text-gray-800">
-                    <h3 class="text-sm tracking-wider">Σύνολο Υπηρεσιών</h3>
-                    <p class="text-3xl font-bold">8</p>
-                </div>
-            </div>
-
-            <!-- οχήματα στρατοπέδου -->
-            <div
-                class="flex w-full items-center bg-white border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
-                <div class="p-4 bg-gray-600">
-                    <svg class="w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="M21.07 8.43a.23.23 0 0 1-.07-.27a.24.24 0 0 1 .24-.16H22a1 1 0 0 0 1-1V4.25a1 1 0 0 0-1-1h-1.25A.25.25 0 0 1 20.5 3v-.5A1.5 1.5 0 0 0 19 1H5a1.5 1.5 0 0 0-1.5 1.5V3a.25.25 0 0 1-.25.25H2a1 1 0 0 0-1 1V7a1 1 0 0 0 1 1h.76a.24.24 0 0 1 .24.16a.23.23 0 0 1-.06.27l-2.13 2a1.54 1.54 0 0 0-.3.9V16A1.5 1.5 0 0 0 2 17.5h.25a.25.25 0 0 1 .25.25v3.75A1.5 1.5 0 0 0 4 23h2a1.5 1.5 0 0 0 1.5-1.5v-3.75a.25.25 0 0 1 .25-.25h8.52a.25.25 0 0 1 .25.25v3.75A1.5 1.5 0 0 0 18 23h2a1.5 1.5 0 0 0 1.5-1.5v-3.75a.25.25 0 0 1 .25-.25H22a1.5 1.5 0 0 0 1.5-1.5v-4.67a1.43 1.43 0 0 0-.36-1ZM8 15.5a.5.5 0 0 1-.5-.5v-1a1 1 0 0 1 1-1h7a1 1 0 0 1 .71.29a1 1 0 0 1 .29.71v1a.5.5 0 0 1-.5.5Zm-2.5-8v-4A.5.5 0 0 1 6 3h4.75a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H6a.5.5 0 0 1-.48-.53Zm7.25 0v-4a.5.5 0 0 1 .5-.5H18a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-4.73a.5.5 0 0 1-.5-.53ZM4 12.5A1.5 1.5 0 1 1 2.5 14A1.5 1.5 0 0 1 4 12.5m16 3a1.5 1.5 0 1 1 1.5-1.5a1.5 1.5 0 0 1-1.5 1.5" />
-                    </svg>
-                </div>
-                <div class="px-4 text-gray-800">
-                    <h3 class="text-sm tracking-wider">Oχήματα Στόλου</h3>
-                    <p class="text-3xl font-bold">20</p>
-                </div>
-            </div>
-
-            <!-- φαντάροι σε άδεια -->
-            <div
-                class="flex w-full items-center bg-white border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
-                <div class="p-4 bg-purple-600">
-                    <svg class="w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
-                        <path fill="currentColor" fill-rule="evenodd"
-                            d="M4.5 1a1 1 0 0 0-2 0v1h-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h11a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 2h-1V1a1 1 0 1 0-2 0v1h-5zm2.489 4.125a.5.5 0 0 1 .454.27l.002.004l.744 1.498h.003l1.65.25a.5.5 0 0 1 .273.862l-1.16 1.103a.3.3 0 0 1 .018.063l.232 1.636a.5.5 0 0 1-.739.529l-1.456-.77a.04.04 0 0 0-.028 0l-1.456.77a.5.5 0 0 1-.738-.533l.276-1.638l.006-.026l-1.195-1.144l-.005-.005a.5.5 0 0 1 .277-.846h.003l1.653-.243l.001-.002l.743-1.493a.5.5 0 0 1 .442-.285"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
-                <div class="px-4 text-gray-800">
-                    <h3 class="text-sm tracking-wider">Φαντάροι σε άδεια</h3>
-                    <p class="text-3xl font-bold">5</p>
-                </div>
-            </div>
-
-        </div>
+        </section>
 
     </div>
 
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 
 
     <script type="module" src="/src/main.js"></script>

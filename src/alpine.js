@@ -1,12 +1,4 @@
-import Alpine from "alpinejs";
-
-// παράδειγμα global component
-Alpine.data("counter", () => ({
-  count: 0,
-  inc() {
-    this.count++;
-  },
-}));
+Alpine.data("counter", () => ({}));
 
 window.Alpine = Alpine;
 Alpine.start();
